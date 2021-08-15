@@ -1,5 +1,6 @@
 console.log("account script is working");
-
+const loginSection2 = document.getElementById('login-section');
+const accountSection2 = document.getElementById('account-section')
 // get all button 
 const depositInput = document.getElementById('deposite-input');
 const depositeButton = document.getElementById('deposit-btn');
@@ -13,7 +14,11 @@ const totalAmountText = document.getElementById('total-amount');
 
 const logout = document.getElementById('logout-btn');
 logout.addEventListener('click', function(){
-    window.location.href = '/index.html';
+    accountSection2.style.display = 'none';
+    loginSection2.style.display = 'block'
+    // window.location.href = '/index.html';
+
+    
 })
 
 let finalTotalAmount;
