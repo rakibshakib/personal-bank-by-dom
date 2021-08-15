@@ -14,8 +14,8 @@
 <body>
     <header>
         <section class="container mx-auto">
-            <h2 class="text-center text-4xl pt-16">- 😍 Welcome To <span class="font-semibold text-blue-600 ">Personal
-                    Bank</span> 😍 -</h2>
+            <h2 class="text-center text-xl md:text-4xl pt-16">😍 Welcome To <span class="font-semibold text-blue-600 ">Personal
+                    Bank</span> 😍</h2>
         </section>
     </header>
     <main>
@@ -24,10 +24,12 @@
                 <h2 class="text-center text-2xl my-5 font-semibold text-blue-600">Please Login To Your Account</h2>
                 <div class=" flex flex-col justify-center	items-center my-5">
                     <input type="email" placeholder="please enter your email"
-                        class="border-2 px-5 py-2 rounded-md w-2/4 my-5 bg-white" id="user-email">
+                        class="border-2 px-5 py-2 rounded-md md:w-2/4 my-5 bg-white" id="user-email">
+                        <label for="user-email" class="text-xs">email must contain '@gmail.com'</label>
                     <input type="password" placeholder="please eneter your password"
-                        class="border-2 px-5 py-2 rounded-md w-2/4 my-5 bg-white" id="user-password">
-                    <button class="border-2 px-2 py-1 rounded-md w-1/6 bg-white my-5" id="submit-btn">Submit</button>
+                        class="border-2 px-5 py-2 rounded-md md:w-2/4 my-5 bg-white" id="user-password">
+                        <label for="user-password" class="text-xs">password must contain 'bank'</label>
+                    <button class="border-2 px-2 py-1 rounded-md md:w-1/6 bg-white my-5" id="submit-btn">Submit</button>
                 </div>
             </div>
         </section>
